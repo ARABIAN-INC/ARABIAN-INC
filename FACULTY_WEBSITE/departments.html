@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style for the container of the details element */
+        details {
+            border: 2px solid #007BFF; /* Blue border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px; /* Padding inside the box */
+            width: auto; /* Adjust width as needed, or use a specific value */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+            margin: 20px; /* Optional: adds space around the box */
+            background-color: #f9f9f9; /* Light grey background */
+        }
+
+        /* Style for the summary element to make it more noticeable */
+        summary {
+            cursor: pointer; /* Changes the cursor to indicate it's clickable */
+            font-weight: bold; /* Makes the summary text bold */
+        }
+
+        /* Additional styling can go here. For example, style the content within <details> */
+        details > *:not(summary) {
+            padding-top: 10px; /* Adds space between the summary and the content inside */
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>Details</summary>
+        Something small enough to escape casual notice.
+    </details>
+</body>
+</html>
